@@ -1,3 +1,21 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('menu');
+  const clock = document.getElementById('clock');
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+  menuToggle.addEventListener('click', function () {
+    menu.classList.toggle('active');
+
+    // בודק אם התפריט פתוח או סגור
+    const isMenuOpen = menu.classList.contains('active');
+
+    // מציג או מסתיר את השעון וכפתור מצב כהה בהתאם
+    clock.style.display = isMenuOpen ? 'none' : '';
+    darkModeToggle.style.display = isMenuOpen ? 'none' : '';
+  });
+});
+
 // פונקציה לעדכון השעון
 function updateClock() {
   const now = new Date();
@@ -100,3 +118,9 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
       alert("הייתה בעיה בשליחה. אנא נסה שוב.");  // הצגת הודעת שגיאה
     });
 });
+
+
+
+
+
+

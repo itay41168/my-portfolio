@@ -9,16 +9,24 @@
 </head>
 <body>
   <header>
-  <nav>
-    <div id="dark-mode-toggle">Toggle Dark Mode</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div id="clock"></div> <!-- כאן יהיה השעון -->
-  </nav>
-</header>
+    <nav>  
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="dark-mode-toggle">Toggle Dark Mode</div>
+
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+     <div id="clock"></div> <!-- השעון -->
+    </nav>
+  </header>
+
 
 
   <section id="hero" data-aos="fade-up">
@@ -45,9 +53,10 @@
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="script.js"></script> <!-- עדכון לקובץ JavaScript עם השם החדש -->
   <script>
     AOS.init();
   </script>
+  <script src="script.js"></script>
+
 </body>
 </html>
